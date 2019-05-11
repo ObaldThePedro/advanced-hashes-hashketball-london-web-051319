@@ -155,9 +155,9 @@ end
 
 
 def team_names
-  array = []
-  hash.each do |location, attributes|
-    attributes.each do |attribute, info|
+  list = []
+  game_hash.each do |team, team_details|
+    team_details.each do ||
       if attribute == :team_name
         array << info
       end
