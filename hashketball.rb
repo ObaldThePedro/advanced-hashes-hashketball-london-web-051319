@@ -161,7 +161,6 @@ def team_colors (team_name)
             team_details[:colors]
         end
     end
-    colors
 end
 
 
