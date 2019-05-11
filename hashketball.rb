@@ -179,7 +179,7 @@ def player_numbers(team_name)
     if team_details[:team_name] == team_name
       players_array = team_details[:players]
       players_array.each do |player, player_attributes|
-        return player_attributes[:number]
+        list << player_attributes[:number]
       end
   end
 end
