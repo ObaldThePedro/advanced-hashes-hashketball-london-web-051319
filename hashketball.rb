@@ -180,8 +180,8 @@ def player_numbers(team_name)
       players_array = team_details[:players]
       players_array.each do |player, player_attributes|
         list << player_attributes[:number]
+        end
       end
-  end
 end
 
 
