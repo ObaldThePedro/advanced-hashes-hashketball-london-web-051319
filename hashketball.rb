@@ -159,6 +159,7 @@ def team_colors (team_name)
         if team_details[:name] == team_name
            return team_details[:colors].collect do |color|
               color
+            end)
         end
     end
 end
