@@ -157,7 +157,7 @@ end
 def team_names
   list = []
   game_hash.each do |team, team_details|
-    team_details.each do ||
+    team_details.each do |attribute,|
       if attribute == :team_name
         array << info
       end
