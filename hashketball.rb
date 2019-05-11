@@ -181,6 +181,7 @@ def player_numbers(team_name)
         list << player_attributes[:number]
       end
   end
+end
   return list
 end
 
