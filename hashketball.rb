@@ -176,7 +176,7 @@ end
 def player_numbers(team_name)
   game_hash.each do |team, team_details|
     if team_details[:team_name] == team_name
-      return team_details[:players].map { |player| player[:number] }
+      team_details.map
     end
   end
 end
