@@ -191,9 +191,8 @@ end
 def player_stats(player_name)
   player_stats = {}
   game_hash.each do |team, team_details|
-    team_details[:players].each do |stats|
-
-      if stats[:name] == player_name
+    team_details[:players].each do |statistics|
+      if statistics[:name] == player_name
         stats.delete(:name)
         player_stats = stats
       end
@@ -201,6 +200,7 @@ def player_stats(player_name)
   end
   player_stats
 end
+
 
 def big_shoe_rebounds
   big_shoes_guy = 0
