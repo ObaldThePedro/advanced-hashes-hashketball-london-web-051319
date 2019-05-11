@@ -155,11 +155,11 @@ end
 
 def team_colors(team_name)
   list = []
-  game_hashash.each do |location, attributes|
-    if game_hashhash[location].values.include?(team_name)
-      attributes.each do |attribute, info|
+  game_hash.each do |team, team_details|
+    if game_hash[team].values.include?(team_name)
+      team_details.each do |attribute, color|
         if attribute == :colors
-          return info
+          return color
         end
       end
     end
