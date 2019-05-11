@@ -169,15 +169,8 @@ end
 
 
 def team_names
-  list = []
-  game_hash.each do |team, team_details|
-    team_details.each do |attribute, name|
-      if attribute == :team_name 
-        list << name
-      end
-    end
+  game_hash.map {|home_away, keys| keys[:team_name]}
   end
-  return list
 end
 
 
