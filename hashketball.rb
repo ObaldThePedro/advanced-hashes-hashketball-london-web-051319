@@ -168,7 +168,7 @@ def team_colors(team_name)
 end
 
 
-def team_names(Hash)
+def team_names(hash)
   list = []
   game_hash.each do |team, team_details|
     team_details.each do |attribute,name|
