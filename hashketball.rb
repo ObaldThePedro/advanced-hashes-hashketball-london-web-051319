@@ -157,7 +157,7 @@ end
 def team_colors (team_name)
   list = []
     game_hash.each do |team, team_details|
-        
+        team_details.each do ||
         end
     end
 end
