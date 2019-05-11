@@ -168,8 +168,8 @@ end
 
 
 def team_names
-  game_hash.map |team, attribute|
-  attribute[:team_name]
+  name = game_hash.map {|team, attribute| attribute[:team_name]}
+  return name
 end
 
 
