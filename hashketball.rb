@@ -194,7 +194,6 @@ def player_stats(player_name)
         player_stats = stats
       end
     end
-  end
   player_stats
 end
 
