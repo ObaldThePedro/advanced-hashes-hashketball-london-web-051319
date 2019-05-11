@@ -167,13 +167,6 @@ def team_names
 end
 
 
-def team_names
-  game_hash.collect do |team, team_details|
-    team_details_hash[:name] 
-  end
-end
-
-
 def player_numbers (team_name)
   player_numbers_list = []
   game_hash.each do |team, team_details|
