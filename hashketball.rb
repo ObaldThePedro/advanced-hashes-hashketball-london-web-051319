@@ -174,11 +174,11 @@ end
 
 
 def player_numbers(team_name)
+  list = []
   game_hash.each do |team, team_details|
     if team_details[:team_name] == team_name
       team_details.each do |player, player_attributes|
         return player_attributes[:number]
-    end
   end
 end
 
