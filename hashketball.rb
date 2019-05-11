@@ -173,11 +173,11 @@ def team_names(game_hash)
   game_hash.each do |team, team_details|
     team_details.each do |attribute,name|
       if attribute == :team_name
-        array << name
+        list << name
       end
     end
   end
-  return array
+  return list
 end
 
 
